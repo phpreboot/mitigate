@@ -1,0 +1,18 @@
+{
+    "name": "phpreboot/mitigate",
+    "description": "A command based, console framework to quickly and easily write command line programs in PHP.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kapilsharma",
+            "email": "kapil@kapilsharma.info"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {"Phpreboot\\": "src/Phpreboot"}
+    }
+}

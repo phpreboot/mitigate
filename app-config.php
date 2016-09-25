@@ -1,4 +1,4 @@
 <?php
 return [
-    "a" => "b",
+    "logpath" => __DIR__ . DIRECTORY_SEPARATOR . "app-log.php",
 ];

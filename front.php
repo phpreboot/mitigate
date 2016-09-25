@@ -1,6 +1,7 @@
 <?php
 
-/* -----------------------------------------------------------------
+/*
+ * -----------------------------------------------------------------
  * Bootstrap
  * -----------------------------------------------------------------
  * PHP Reboot Mitigate heavily depends on third party libraries,
@@ -22,7 +23,18 @@ require __DIR__ . '/vendor/autoload.php';
  * pass to the Application constructor.
  * -----------------------------------------------------------------
  */
-$config = require __DIR__ . '/app-config.php';
+$configPath = __DIR__ . '/app-config.php';
 
-$app = new Phpreboot\Mitigate\Application();
+/*
+ * -----------------------------------------------------------------
+ * Create and run Application
+ * -----------------------------------------------------------------
+ * Constructor of Application will do basic bootstraping based on
+ * given configuration files.
+ *
+ * Once basic bootstraping is done, we can simply execute the
+ * application by calling `run` method.
+ * -----------------------------------------------------------------
+ */
+$app = new Phpreboot\Mitigate\Application($configPath);
 $app->run();
